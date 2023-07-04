@@ -1,12 +1,16 @@
 header{
     grid-area: cab;
-    {
-        aside{
-            grid-area: sec;
+    background-color: blueviolet;
+}
+aside{
+    grid-area: sec;
+    background-color: aquamarine;
 }
 main{
     grid-area: pri;
+    background-color: brown;
 }
 footer{
     grid-area: rod;
-}ssss
+    background-color: beige;
+}
