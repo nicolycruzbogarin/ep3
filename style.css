@@ -1,6 +1,40 @@
+*{
+    margin: 5;
+    padding: 5;
+    box-sizing: 5;
+}
 header{
     grid-area: cab;
-    background-color: blueviolet;
+    background-color: rgb(155, 81, 224);
+}
+.menu-item-object{
+    display: inline;
+    font-family: "Poppins", Sans-serif;
+    
+    
+    text-transform: uppercase;
+    
+    align-items:center;
+    margin: 2rem;
+}
+.nav-menu, .item{
+    color: #fff;
+    font-family: "Lemon Milk", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.logotipo{
+    height: auto;
+    width: 190px;
+    border-radius: 100px;
+    margin-top:15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 aside{
     grid-area: sec;
@@ -8,9 +42,34 @@ aside{
 }
 main{
     grid-area: pri;
-    background-color: brown;
+    background-color: rgb(247, 141, 167);
 }
 footer{
     grid-area: rod;
     background-color: beige;
+}
+body{
+    display: grid;
+    background-color: #fff;
+    grid-template-areas: 
+    "cab cab cab"
+    "sec pri pri"
+    "rod rod rod";
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+@media only screen and (max-width: 800px) {
+    body{
+        grid-template-areas: 
+        "cab"
+        "sec"
+        "pri"
+        "rod";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 70px 500px 100px;
+    }
 }
